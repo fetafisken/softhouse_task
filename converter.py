@@ -33,6 +33,8 @@ def next_line():
 
 
 def call(func, depth, entry):
+    """ Used to simplify a call to a function when list length is unknown. """
+    
     if len(entry) > 3:
         return func(depth, entry[1], entry[2], entry[3])
     elif len(entry) > 2:
